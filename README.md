@@ -17,7 +17,6 @@ $_backImageHelper = $this->helper('MindArc\CategoryProductGallery\Helper\Data');
 ```
 #### 2. get second image for each product inside "foreach ($_productCollection as $_product)"
 ```
-$_backImageHelper->addGallery($_product);
 $backImageUrl = $_backImageHelper->getSecondImages($_product)['second_image'];
  <?php if($backImageUrl):?>
       <img class="product-image-photo hover-image" src="<?php echo $backImageUrl; ?>" />
